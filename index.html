@@ -1,168 +1,151 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Curriculum Vitae</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescy Febrianda | Web Generalist</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Rescy Febrianda - Web Generalist building responsive websites, basic backend logic, and deploy-ready projects." />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body onload="draw()">
-    <canvas id="bg"></canvas>
-    <main id="content">
-        <h1>
-            <div class="hex moved"></div><span>Profil</span></h1>
-        <div class="subtext" id="main">
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">Rescy</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <h2>Web Generalist</h2>
+      <p>
+        I build websites end-to-end — from responsive UI to basic backend logic
+        and deployment.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
+    </section>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h3>About Me</h3>
+      <div class="about-content">
+        <img src="images/rescy.jpg" alt="Rescy Febrianda" class="profile-img" />
         <p>
-        <center>
-        <b><u>RESCY FEBRIANDA | TEKNIK KOMPUTER</u></b>
-        </center>
-        <br>
-          <div class="img-card">
-            <img src="images/rescy.jpg" width="120px" height="120px"></img>
+          I am a Web Generalist with a focus on building clean, responsive, and
+          maintainable websites. I enjoy working across the full web workflow —
+          from layout design and frontend development to basic backend logic and deployment.
         </p>
-            <p>Perkenalkan nama saya Rescy Febrianda, seorang lulusan SMK dengan jurusan Teknik Komputer Jaringan yang memiliki minat dan kompetensi di bidang teknologi informasi dan jaringan. Saya memiliki pengetahuan yang solid tentang konsep dasar komputer, jaringan, dan sistem operasi.</p>
-        </div>
-        </div>
-        <h2>
-            <div class="hex"></div>
-            <span>Data Pribadi</span></h2>
-        <div class="subtext coll">
-          <ul>
-          <li>
-   					<span>NAMA :</span>
-   					<strong>RESCY FEBRIANDA</strong>
-   				</li>
-   				<hr />
-   				
-   			  <li>
-   					<span>TANGGAL LAHIR :</span>
-   					<strong>18 FEBRUARI 2004</strong>
-   				</li>
-   				<hr />
-   				<li>
-   					<span>JENIS KELAMIN :</span>
-   					<strong>LAKI-LAKI</strong>
-   				</li>
-   				<hr />
-   				<li>
-   					<span>KEWARGANEGARAAN :</span>
-   					<strong>INDONESIA</strong>
-   				</li>
-   				<hr />
-   				<li>
-   					<span>ALAMAT :</span>
-   					<strong> JL. T. CUT ALI, DSN UJUNG PASIR, TAPAKTUAN, ACEH SELATAN, ACEH</strong>
-   				</li>
-   				<hr />
-   				<li>
-   					<span>EMAIL :</span>
-   					<strong>rescyfebrianda7@gmail.com</strong>
-   				</li>
-   				<hr />
-   				<li>
-   					<a href="https://rescy.my.id">WEBSITE</a></a>
-   				</li>
-   			  </ul>
-   		 </div>
-        <h2>
-        <div class="hex"></div><span>Pengalaman Kerja</span>
-        </h2>
-        <div class="subtext coll">
-            <ul>
-              <li>
-              <strong> PKL di Media Komputer </strong>
-              </li>
-             </ul>
-        </div>
-        <h2>
-            <div class="hex"></div><span>Riwayat Pendidikan </span></h2>
-        <div class="subtext coll">
-           <strong><u>FORMAL</u></strong>
-           <div>
-           <i class="fa fa-graduation-cap"> SDN 9 Tapaktuan</i>
-	   					<p>Lulus Juni 2015</p>
-	   					<hr />
-           <i class="fa fa-graduation-cap">SMPN 1 Tapaktuan</i>
-	   					<p>Lulus Mei 2018</p>
-	   					<hr />
-	   				<i class="fa fa-graduation-cap">SMKN 1 Tapaktuan</i>
-	   					<p>Lulus Juni 2021</p>
-	   				</div>
-        </div>
-        <h2>
-        <div class="hex"></div>
-        <span>Keahlian</span>
-        </h2>
-        <div class="subtext coll">
-   		  <div>
-				<ul class="skill-bars">
-				  <h3>Microsoft Office</h3>
-				   <li>
-				   <strong>Word</strong>
-				   	<div class="progress percent80"><span>80%</span></div>
-				   </li>
-				   <li>
-				    <strong>Powerpoint</strong>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   </li>
-				   <li>
-				    <strong>Excel</strong>
-				   	<div class="progress percent50"><span>50%</span></div>
-				   <br>
-				   <h3>Pemrograman</h3>
-				   <li>
-				   <strong>HTML</strong>
-				   	<div class="progress percent80"><span>80%</span></div>
-				   </li>
-				   <li>
-				    <strong>CSS</strong>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   </li>
-				   <li>
-				    <strong>Javascript</strong>
-				   	<div class="progress percent50"><span>40%</span></div>
-				   </li>
-				</ul>
+      </div>
+    </section>
 
-   		</div>
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h3>Skills</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Frontend</h4>
+          <p>HTML, CSS (Flexbox, Grid), JavaScript</p>
+        </div>
+        <div class="card">
+          <h4>Backend (Basic)</h4>
+          <p>PHP / Node.js, REST API (basic)</p>
+        </div>
+        <div class="card">
+          <h4>Tools</h4>
+          <p>Git, GitHub, VS Code</p>
+        </div>
+        <div class="card">
+          <h4>Deployment</h4>
+          <p>GitHub Pages, Custom Domain, Basic Hosting</p>
+        </div>
+      </div>
+    </section>
 
-   	</div>
-        </div>
-        
-        <h2>
-            <div class="hex"></div><span>Media Sosial</span></h2>
-        <div class="subtext coll">
-        <div class="media-icons">
-          <a href="https://www.facebook.com/rescyfebrianda0"><i class="fab fa-facebook-f"> Facebook</i></a>
-          <a href="https://www.instagram.com/rscyfbrnd"><i class="fab fa-instagram"> Instagram</i></a>
-          <a href="https://www.github.com/Rescy"><i class="fab fa-github"> Github</i></a>
-        </div>
-        </div>
-        
-        <h2>
-            <div class="hex"></div><span>Kontak</span></h2>
-        <div class="subtext coll">
-             <div>
-              <i class="fas fa-phone"> Phone :
-              <span>+62 822 7517 9602</span></i>
-            </div>
-              <i class="fas fa-envelope"> Email :
-              <span>rescyfebrianda7@gmail.com</span></i>
-            </div>
-        </div>
-    </main>
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one"><path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path></svg>
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="two"><path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path></svg>
-    <div id="hex-holder">
-        <div class="hex" id="uno"></div>
-        <div class="hex" id="dos"></div>
-        <div class="hex" id="tres"></div>
-    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h3>Projects</h3>
+      <div class="grid">
 
-<!-- partial -->
- <script src="https://code.jquery.com/jquery-2.2.4.min.js"> </script>
-  <script  src="js/script.js"></script>
+        <article class="card project">
+          <h4>Company Profile Website</h4>
+          <p>
+            Responsive company profile website with clean layout and structured content.
+          </p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Live</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
 
+        <article class="card project">
+          <h4>Landing Page Product</h4>
+          <p>
+            Product landing page focused on clear CTA and mobile usability.
+          </p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Live</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h4>Mini Web App</h4>
+          <p>
+            Simple web application with JavaScript logic and form interaction.
+          </p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Live</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="section container">
+      <h3>How I Work</h3>
+      <ol class="workflow">
+        <li>Understand project requirements</li>
+        <li>Create simple and clean layout</li>
+        <li>Build responsive UI</li>
+        <li>Add logic and interaction</li>
+        <li>Deploy and test</li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:rescy@example.com">rescy@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/Pebiaa" target="_blank">github.com/Pebiaa</a></p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Rescy Febrianda. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
